@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $student_number = explode("@", $username)[0];
     if ($password === $student_number) {
         echo "Hoşgeldiniz, " . htmlspecialchars($password);
+        header("Refresh: 2; url=anasayfa.html");
     } else {
         echo "Giriş başarısız! Tekrar deneyiniz.";
         header("Refresh: 2; url=proje.html");

@@ -1,0 +1,1 @@
+Bu projemde amaç kısaca şehrimi ve kendimi tanıtan bir web sitesi yapmaktır. Bu web sitesini yaparken html,js,css,php gibi dilleri kullanacağım. 
