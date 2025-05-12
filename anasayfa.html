@@ -1,40 +1,101 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #0073e6;
+        }
         .linkler {
             text-align: center;
-            background-color: aqua;
-            color: red;
+            background-color: #0073e6;
+            color: white;
+            font-weight: bold;
+        }
+
+        .linkler a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+        }
+
+        .linkler:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
-    
 </head>
 <body>
-    <table width="1470" height="700" border="0">
-    <tr>
-        <td colspan="2"><img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSml_IyOOmVdzWnhyf5l832ixuZ64BP5Vf90Q&s" width="1470" height="200"></td>
-    </tr>
-    <tr>
-        <td width="200" height="100"  class="linkler"><a href="hakkimda.html">Hakkımda</a></td>
-        <td width="1270" ></td>
-    </tr>
-    <tr>
-        <td width="200" height="100" class="linkler"><a href="cv.html">Öz Geçmişim</a></td>
-        <td width="1270" ></td>
-    </tr>
-    <tr>
-        <td width="200" height="100" class="linkler"><a href="sehir.html">Bursa</a></td>
-        <td width="1270" ></td>
-    </tr>
-    <tr>
-        <td width="200" height="100" class="linkler"><a href="takim.html">Şehir Takımım</a></td>
-        <td width="1270" ></td>
-    </tr>
-    <tr>
-        <td width="200" height="100" class="linkler"><a href="iletisim.html">İletişim Sayfası</a></td>
-        <td width="1270" ></td>
-    </tr>
-</table>
+    <img class="header-image" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Sakarya_%C3%9Cniversitesi_Bilgisayar_ve_Bili%C5%9Fim_Bilimleri_Fak%C3%BCltesi.jpg" alt="Sakarya Üniversitesi">
+    <table>
+        <tr>
+            <td class="linkler"><a href="hakkimda.html">Hakkımda</a></td>
+            <td rowspan="3"><img src="https://www.sakarya.edu.tr/assets/img/tarihce.png" width="400" height="auto"></td>
+            <td rowspan="3" >
+                <h3>Sakarya Üniversitesi’nin Tarihçesi</h3>
+                <p> Kendisine çağdaş uygarlığın gerektirdiği her türlü donanıma sahip bireyler yetiştirmeyi amaç edinmişolan Sakarya Üniversitesi'nin çekirdeğini 1970 yılında açılan Sakarya Mühendislik ve MimarlıkYüksekokulu oluşturmuştur. Bu okul 1971 yılında Sakarya Devlet Mimarlık ve Mühendislik Akademisi'nedönüşmüş, 1982-1992 yılları arasında İstanbul Teknik Üniversitesi'ne bağlı bir Fakülte olarak öğretimvermiştir.
+            
+                    3 Temmuz 1992 tarih ve 3837 sayılı kanun ile Sakarya Üniversitesi kurulmuştur.
+                    
+                    90 sonrasında kurulan üniversiteler arasında akademik ve teknik altyapısını hızla tamamlayanüniversitemiz idari birimleri ile ISO-2002 Kalite Belgesi ile "EFQM Mükemmellik Yetkinlik SeviyesiKalite Belgesi"ne sahip ilk ve tek devlet üniversitesi olup laboratuvar, eğitim ve sosyal hizmetler,Internet alt yapısı ve bilişim sektöründeki atılımlarıyla bir çok üniversite için örnekoluşturmaktadır.</td> 
+           </td>
+        </tr>
+        <tr>
+            <td class="linkler"><a href="cv.html">Öz Geçmişim</a></td>
+        </tr>
+        <tr>
+            <td class="linkler"><a href="sehir.html">Bursa'yı Tanıyalım</a></td>
+        </tr>
+        <tr>
+            <td class="linkler"><a href="takim.html">Bursaspor</a></td>
+            <td rowspan="2"><img src="http://bsm.sakarya.edu.tr/timthumb.php?src=http://bsm.sakarya.edu.tr/sites/bsm.sakarya.edu.tr/image/Sek4.jpg&w=800" width="400" height="auto"></td>
+            <td rowspan="2">
+                <h4>Bilgisayar ve Bilişim Bilimleri Fakültesi Tarihçesi</h4>
+                <p> Fakültemiz, 13 Kasım 2010 tarihli ve 27758 sayılı Resmi Gazetede yayınlanan 2010/1048 sayılı Bakanlar Kurulu kararına dayalı olarak kurulmuştur.
+ 
+
+                    Esentepe Kampüsü içerisinde yer alan fakültemiz, Bilgisayar Mühendisliği, Bilişim Sistemleri Mühendisliği ve Yazılım Mühendisliği bölümlerinden oluşmaktadır.
+                     
+                    
+                    Bilgisayar Mühendisliği bölümü akademik faaliyetlerine 1994 yılında Mühendislik Fakültesi çatısı altında başlamıştır. Halen lisans (1.öğretim, 2.öğretim), yüksek lisans (tezli ve uzaktan eğitim) ve doktora programlarını yürütmektedir. 2011-2012 eğitim-öğretim güz döneminden itibaren Mühendislik Fakültesinde kapatılarak öğrencileri ile birlikte tüm eğitim, öğretim ve araştırma faaliyetlerini Bilgisayar ve Bilişim Bilimleri Fakültesi bünyesinde sürdürmektedir.
+                                </td>
+        </tr>
+        <tr>
+            <td class="linkler"><a href="iletisim.html">İletişim Sayfası</a></td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 Yunus Emre Büyük | Tüm hakları saklıdır.</p>
+    </footer>
+
 </body>
 </html>
