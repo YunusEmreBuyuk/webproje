@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim Formu Sonuçları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+            margin: 0;
+        }
+        .container {
+            background-color: #d1e7fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-data {
+            text-align: left;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>İletişim Bilgileri</h2>
+    <div class="form-data">
+        <p><strong>Ad Soyad:</strong> <span id="name"></span></p>
+        <p><strong>E-posta:</strong> <span id="email"></span></p>
+        <p><strong>Telefon:</strong> <span id="phone"></span></p>
+        <p><strong>Mesaj:</strong> <span id="message"></span></p>
+    </div>
+</div>
+
+<script>
+    const formData = JSON.parse(localStorage.getItem("formData"));
+
+    if (formData) {
+        document.getElementById("name").textContent = formData.name;
+        document.getElementById("email").textContent = formData.email;
+        document.getElementById("phone").textContent = formData.phone;
+        document.getElementById("message").textContent = formData.message;
+    } else {
+        document.querySelector(".form-data").innerHTML = "<p>Form verisi bulunamadı.</p>";
+    }
+</script>
+
+</body>
+</html>
