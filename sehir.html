@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .slider-container { 
+            width: 100%; 
+            max-width: 800px; 
+            margin: auto; 
+            position: relative; 
+            overflow: hidden; 
+        }
+        .slider { 
+            display: flex; 
+            transition: transform 0.5s ease-in-out; 
+        }
+        .slide { 
+            min-width: 100%; 
+            box-sizing: border-box; 
+        }
+        .slider img { 
+            width: 100%; 
+            height: auto; 
+            cursor: pointer; 
+        }
+        .buttons { 
+            position: absolute;
+            top: 50%; 
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between; 
+            transform: translateY(-50%); 
+        }
+        .buttons button { 
+            background: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            border: none; 
+            padding: 10px; 
+            cursor: pointer;
+         }
+        .content { 
+            display: none; 
+            padding: 20px; 
+            text-align: left; 
+            max-width: 800px; 
+            margin: auto; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bursa - Yeşil Şehir</h1>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="https://uludagturlari.com.tr/uploads/2022/01/uludag-tarihi-724x394.webp" alt="Uludağ" onclick="showContent('uludag')"></div>
+            <div class="slide"><img src="https://www.olay.com.tr/wp-content/uploads/2022/04/kozahan1.jpg" alt="Koza Han" onclick="showContent('koza_han')"></div>
+            <div class="slide"><img src="https://www.bursaulucamii.com/images/islamdakiyeri.jpg" alt="Ulu Camii" onclick="showContent('ulu_camii')"></div>
+            <div class="slide"><img src="https://www.bizevdeyokuz.com/wp-content/uploads/Cumalikizik-sokaklari.jpg" alt="Cumalıkızık" onclick="showContent('cumalikizik')"></div>
+        </div>
+        <div class="buttons">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+
+    <div id="uludag" class="content">
+        <h2>Uludağ</h2>
+        <p>Uludağ, Bursa ili sınırları içinde, 2.543 m yüksekliği ile Türkiye'nin en büyük kış ve doğa sporları merkezi olan dağ.
+
+Uludağ, Marmara Bölgesinin en yüksek dağıdır. Kuzeybatı-güneydoğu doğrultusunda uzanan Uludağ'ın uzunluğu 40 km'yi bulur. Genişliği ise 15–24 km'dir. Toplu ve heybetli bir görünüşe sahip olan bu dağın Bursa'ya bakan yamaçları kademeli, güneye Orhaneli'ne bakan tarafları ise düz ve daha diktir. En yüksek noktası göller bölgesinde yer alan Uludağ tepe'dir (2.543 m). Uzaktan Bursa'ya yaklaşılırken ve oteller bölgesinde görülen yüksek tepe genelde zirve olarak algılanır. Hâlbuki zirve gibi görünen o tepenin ismi Keşiş Tepedir ve yüksekliği 2.486 m'dir. Uludağ tepe (2.543 m) Keşiş Tepenin 5 km güneydoğusunda yer alır. Dağın kuzey tarafında Sarıalan, Kirazlı, Kadı, Sobra yaylaları vardır.</p>
+    </div>
+
+    <div id="koza_han" class="content">
+        <h2>Koza Han</h2>
+        <p>Koza Han 15. yüzyıl sonlarında II. Bayezid tarafından mimar Abdül ula bin Pulat Şah'a İstanbul'daki eserlerine vakıf olarak Bursa'da yaptırılmış handır.
+
+Hanlar Bölgesi'nde Ulu Cami ile Orhan Camii arasında bulunur. Osmanlı devri han ve kervansaray mimarisinde -ortasındaki mescit bakımından - eski gelenekleri sürdüren ve bütünlüğünü koruyabilmiş olan bir eserdir. Anıtsal giriş kapısı ve avlusunda bulunan altı şadırvanlı köşk mescit Bursa'nın simgeleri arasında kabul edilir.
+
+Geçmişte Yeni Han, Han-ı Cedid, Han-ı Cedid-i Evvel (Pirinç Han’ın yapılmasından sonra), Han-ı Cedid-i Amire, Yeni Kervansaray, Beylik Han, Beylik Kervansaray, Simkeş Han, Sırmakeş Han gibi birçok adla anılmış olan yapı, içinde ipek kozası ticareti yapıldığı için Koza Han adıyla anılır olmuştur. Koza ticareti için Bursa'ya gelen ipek tüccarları konaklama hizmeti veren handa altlı üstlü iki oda tutmuşlar; üstteki odayı ticari işlerini görmek ve konaklamak, alttaki odayı da ticaret mallarını depolamada kullanmışlardır. Han, günümüzde ticarî işlevini korumaktadır.</p>
+    </div>
+
+    <div id="ulu_camii" class="content">
+        <h2>Ulu Camii</h2>
+        <p>Bursa'nın tarihi sembollerinden olan cami, Bursa kent merkezinde, Atatürk Caddesi üzerindedir. Çok ayaklı cami şemasının en klasik ve anıtsal örneği sayılır. Yirmi kubbeli yapı, Türkiye'deki iç cemaat yeri en geniş camidir. Mimarın Ali Neccar veya Hacı İvaz olduğu sanılmaktadır. Caminin kündekari tekniği ile yapılmış minberi Selçuklu oyma sanatından Osmanlı ahşap oymacılığı sanatına geçişin en önemli örneklerinden biri kabul edilen değerli bir sanat eseridir.
+
+Caminin duvarlarında bulunan 19. yüzyılın ikinci yarısında ve 20. yüzyılın başlarında farklı hattatlar tarafından yazılmış 192 adet hat levhası ve duvar yazısı, hat sanatının özgün örnekleri arasında gösterilir.
+
+Caminin iç mekanında, tepesi açık bir kubbenin altında bulunan şadırvan, Ulu Cami'nin dikkat çekici özelliklerindendir.</p>
+    </div>
+
+    <div id="cumalikizik" class="content">
+        <h2>Cumalıkızık</h2>
+        <p>Cumalıkızık, Türkiye'nin Bursa ilinin Yıldırım ilçesine bağlı bir mahalledir. Bursa şehir merkezine 11 kilometredir. Ortalama 20 dakikada ulaşım sağlanır. Uludağ'ın kuzey eteklerinde kurulmuş ve hâlen yaşayan beş Kızık köyünden biridir. Diğer Kızık köyleri şunlardır: Değirmenlikızık, Fidyekızık, Hamanlıkızık ve Derekızık. Bayındırkızık, Dallıkızık, Kızık, Bodurkızık, Ortakızık, Camilikızık, Kiremitçikızık, Kızıkşıhlar ve Kızıkçeşme ise günümüze ulaşamamıştır. Cumalıkızık Etnografya Müzesi burada bulunmaktadır. 2000'de UNESCO tarafından Dünya Mirası Geçici Listesi'ne dahil edilen Cumalıkızık, 2014'te Bursa ile birlikte Dünya Mirası olarak tescil edildi</p>
+    </div>
+
+    <script>
+        let index = 0;
+
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function nextSlide() {
+            const slider = document.querySelector('.slider');
+            index = (index + 1) % slider.children.length;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function prevSlide() {
+            const slider = document.querySelector('.slider');
+            index = (index - 1 + slider.children.length) % slider.children.length;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>
