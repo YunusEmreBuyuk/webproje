@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+        }
+        table { 
+        width: 80%; 
+        margin: 20px auto; 
+        border-collapse: collapse; 
+        }
+        th, td { 
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        }
+        th { 
+        background-color: #f8b400; 
+        color: white; 
+        }
+        tr:nth-child(even) { 
+        background-color: #f2f2f2; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Süper Lig Puan Durumu</h1>
+    <table id="puanTablosu">
+        <thead>
+            <tr>
+                <th>📌 Sıra</th>
+                <th>⚽ Takım</th>
+                <th>🎯 Puan</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        fetch("https://v3.football.api-sports.io/standings?league=203&season=2021", {
+            method: "GET",
+            headers: {
+                "x-rapidapi-host": "v3.football.api-sports.io",
+                "x-rapidapi-key": "db564af76beb115b49a0e205a61da533" 
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("API Yanıtı:", data);
+
+            const tablo = document.querySelector("#puanTablosu tbody");
+            tablo.innerHTML = "";
+
+          if (data.response && data.response.length > 0) { 
+                const standings = data.response[0].league.standings[0];
+                standings.forEach(team => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `<td>${team.rank}</td><td>${team.team.name}</td><td>${team.points}</td>`;
+                    tablo.appendChild(row);
+                });
+            } else {tablo.innerHTML = "<tr><td colspan='3'>Veri bulunamadı.</td></tr>";}
+        })
+        .catch(error => {
+            console.error("Bağlantı hatası:", error);
+            document.querySelector("#puanTablosu tbody").innerHTML =
+                "<tr><td colspan='3'>Veri yüklenirken hata oluştu.</td></tr>";
+        });
+    </script>
+
+</body>
+</html>
