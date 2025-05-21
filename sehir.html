@@ -1,98 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            font-size: larger;
-            text-align: center; 
-            margin: 0; 
-            padding: 0; 
-        }
-        .slider-container { 
-            width: 100%; 
-            max-width: 800px; 
-            margin: auto; 
-            position: relative; 
-            overflow: hidden; 
-        }
-        .slider { 
-            display: flex; 
-            transition: transform 0.5s ease-in-out; 
-        }
-        .slide { 
-            min-width:100%;
-            box-sizing: border-box; 
-        }
-        .slider img { 
-            width: 100%; 
-            height: 500px; 
-            cursor: pointer; 
-        }
-        .buttons { 
-            position: absolute;
-            top: 50%; 
-            width: 100%; 
-            display: flex; 
-            justify-content: space-between; 
-            transform: translateY(-50%); 
-        }
-        .buttons button { 
-            background: rgba(0, 0, 0, 0.5); 
-            color: white; 
-            border: none; 
-            padding: 10px; 
-            cursor: pointer;
-         }
-        .content { 
-            display: none; 
-            padding: 20px; 
-            text-align: left; 
-            max-width: 800px; 
-            margin: auto; 
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #006400;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        } 
-
-        footer {
-            background-color: #006400;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .resim{
-            width: 400px;
-            height: 300px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="stil.css">
 </head>
-<body>
+<body class="bodysehir">
     <header>
         <h1>Bursa</h1>
     </header>
@@ -104,9 +15,9 @@ Ulu Camii, Yeşil Türbe, Muradiye Külliyesi ve Osman Gazi Türbesi, Bursa'nın
 UNESCO tarafından koruma altına alınan Cumalıkızık Köyü ise Osmanlı kırsal yaşamını günümüze taşıyan nadir yerleşimlerden biridir.
 
 Tarihiyle, kültürüyle ve korunmuş mimarisiyle Bursa, geçmişi bugüne taşıyan yaşayan bir tarih şehridir.</p>
-<img class="resim" src="https://baiahotels.com/Photos/baia-hotels-bursa-yesil-turbe-bursa.jpg"> 
-<img class="resim" src="https://www.gotobursa.com.tr/uploads/2021/03/muradiye-hazireler-4_1_large_thumbnail.jpg">
-<img class="resim" src="https://cdn.villacim.com.tr/uploads/640/408_bursa-kapali-carsi-gezilecek-yerler.jpg">
+<img class="resimsehir" src="https://baiahotels.com/Photos/baia-hotels-bursa-yesil-turbe-bursa.jpg"> 
+<img class="resimsehir" src="https://www.gotobursa.com.tr/uploads/2021/03/muradiye-hazireler-4_1_large_thumbnail.jpg">
+<img class="resimsehir" src="https://cdn.villacim.com.tr/uploads/640/408_bursa-kapali-carsi-gezilecek-yerler.jpg">
 <pre>
     YEŞİL TÜRBE                                    MURADİYE KÜLLİYESİ                                  KAPALI ÇARŞI
 </pre>  
@@ -117,9 +28,9 @@ Tarihiyle, kültürüyle ve korunmuş mimarisiyle Bursa, geçmişi bugüne taş�
 Suuçtu Şelalesi, doğayla baş başa kalmak isteyenler için saklı bir cennet gibidir. Gölyazı ise göl kenarındaki tarihi köy dokusuyla hem manzara hem huzur sunar. İnkaya Çınarı, 600 yıllık heybetli gövdesiyle doğanın ve tarihin birleştiği bir başka simgedir.
 
 Bursa, doğayla iç içe olmak isteyen herkes için keşfedilmeye değer bir şehirdir.</p>
-<img class="resim" src="https://uludagturlari.com.tr/uploads/2022/01/ulidag-tarih.jpg">
-<img class="resim" src="https://www.mustafakemalpasa.bel.tr/upload/Whatsapp-image-2024-02-07-at-1133121707294721.jpeg">
-<img class="resim" src="http://www.bursa.gov.tr/kurumlar/bursa.gov.tr/Bursa.gov/bursa/inkaya/576_28689_162966.jpg">
+<img class="resimsehir" src="https://uludagturlari.com.tr/uploads/2022/01/ulidag-tarih.jpg">
+<img class="resimsehir" src="https://www.mustafakemalpasa.bel.tr/upload/Whatsapp-image-2024-02-07-at-1133121707294721.jpeg">
+<img class="resimsehir" src="http://www.bursa.gov.tr/kurumlar/bursa.gov.tr/Bursa.gov/bursa/inkaya/576_28689_162966.jpg">
 <pre>
     ULUDAĞ                                    SUUTÇU ŞELALESİ                                  İNKAYA ÇINARI
 </pre>  
@@ -129,9 +40,9 @@ Bursa, doğayla iç içe olmak isteyen herkes için keşfedilmeye değer bir şe
 Bursa'da üretilen ipek kumaşlar, saraylarda kullanılmış ve Avrupa’ya ihraç edilmiştir. Bu gelişmiş ipekçilik, şehirde ticaretin canlanmasına da katkı sağlamıştır. Hanlar, bedestenler ve çarşılar, bu ticari hareketliliğin izlerini günümüze kadar taşımıştır.
 
 Bugün hâlâ Bursa, geleneksel ipek dokumacılığıyla hem yerli hem yabancı ziyaretçilerin ilgisini çekmektedir.</p>
-<img class="resim" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIXP64uYxajoQ4JxdZ_x0UsLnDpiV2hIFn7QwwmN8NrCUH11vE1BfelHsCl6_EF-e33Ipvn_dhMz4bL-vq4OdqSO_s0U_DgHdJmkBBQBYDEKhdy4RwzAHXS1Hq2l8EtA5ezDaT1jrUMsY/s320/ipek+3.JPG">
-<img class="resim" src="https://bilgihanem.com/wp-content/uploads/2017/12/ipek-kumas-kullanmanin-faydalari-nelerdir.jpg">
-<img class="resim" src="https://www.kiralacar.com/blog/wp-content/uploads/2024/08/koza-han.webp">
+<img class="resimsehir" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIXP64uYxajoQ4JxdZ_x0UsLnDpiV2hIFn7QwwmN8NrCUH11vE1BfelHsCl6_EF-e33Ipvn_dhMz4bL-vq4OdqSO_s0U_DgHdJmkBBQBYDEKhdy4RwzAHXS1Hq2l8EtA5ezDaT1jrUMsY/s320/ipek+3.JPG">
+<img class="resimsehir" src="https://bilgihanem.com/wp-content/uploads/2017/12/ipek-kumas-kullanmanin-faydalari-nelerdir.jpg">
+<img class="resimsehir" src="https://www.kiralacar.com/blog/wp-content/uploads/2024/08/koza-han.webp">
     <pre>
     İPREK KUMAŞI YAPIMI                                İPEK KUMAŞI                                         KOZA HAN
 </pre>  
@@ -145,31 +56,31 @@ Bursa mutfağı sadece İskender’den ibaret değildir. Pideli köfte, tereyağ
 Tatlılar konusunda da Bursa oldukça zengindir. Kemalpaşa tatlısı, adını Bursa’nın Kemalpaşa ilçesinden alır ve hafif şerbetli yapısıyla her yaştan insanın sevdiği bir tatlıdır. Kestane şekeri ise Bursa'nın simgelerindendir. Uludağ eteklerinde yetişen kestanelerle yapılan bu tatlı, şehre özgü hediyeliklerin başında gelir.
 
 Ayrıca Bursa, meyve ve sebzeye dayalı ev yemekleri, zeytinyağlılar, çorba çeşitleri ve tarhana gibi geleneksel lezzetleriyle de sofraları süsler. Her mevsime uygun taze malzemelerle yapılan bu yemekler, şehrin köylerinde ve aile işletmelerinde halen yaşatılmaktadır.</p>
-<img class="resim" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%B0skender_kebap.JPG/500px-%C4%B0skender_kebap.JPG">
-<img class="resim" src="https://www.gotobursa.com.tr/uploads/2022/04/20210326_184619_large_1_1_thumbnail.jpg">
-<img class="resim" src="https://iasbh.tmgrup.com.tr/848fbe/650/344/0/0/664/351?u=http://i.sabah.com.tr/sbh/2016/12/22/kemalpasa-tatlisi-tarifi-kemalpasa-tatlisi-nasil-yapilir-1482398012690.jpg">
+<img class="resimsehir" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%B0skender_kebap.JPG/500px-%C4%B0skender_kebap.JPG">
+<img class="resimsehir" src="https://www.gotobursa.com.tr/uploads/2022/04/20210326_184619_large_1_1_thumbnail.jpg">
+<img class="resimsehir" src="https://iasbh.tmgrup.com.tr/848fbe/650/344/0/0/664/351?u=http://i.sabah.com.tr/sbh/2016/12/22/kemalpasa-tatlisi-tarifi-kemalpasa-tatlisi-nasil-yapilir-1482398012690.jpg">
    <pre>
     İSKENDER KEBAP                               PİDELİ KÖFTE                                         KEMALPAŞA TATLISI
 </pre>  
-    <div class="slider-container">
+    <div class="slider-kutu">
         <div class="slider">
             <div class="slide"><img src="https://cdnuploads.aa.com.tr/uploads/userFiles/61711173-5fde-465e-9a7e-6afe03048c5b/New%20folder%20(2)%2Fgumus_5.jpg" alt="Uludağ" onclick="showContent('turbe')"></div>
             <div class="slide"><img src="https://www.olay.com.tr/wp-content/uploads/2022/04/kozahan1.jpg" alt="Koza Han" onclick="showContent('koza_han')"></div>
             <div class="slide"><img src="https://www.bursaulucamii.com/images/islamdakiyeri.jpg" alt="Ulu Camii" onclick="showContent('ulu_camii')"></div>
             <div class="slide"><img src="https://www.bizevdeyokuz.com/wp-content/uploads/Cumalikizik-sokaklari.jpg" alt="Cumalıkızık" onclick="showContent('cumalikizik')"></div>
         </div>
-        <div class="buttons">
+        <div class="buttonsehir">
             <button onclick="prevSlide()">❮</button>
             <button onclick="nextSlide()">❯</button>
         </div>
     </div>
 
-    <section id="turbe" class="content">
+    <section id="turbe" class="acıklama">
         <h2>Osmangazi ve Orhangazi Türbeleri</h2>
         <p>Osman Gazi, Balaban Bey kalesinden Bursa’nın kuşatma harekâtını yürütürken, burada bulunan manastırın gümüş gibi parlayan kurşun kaplı kubbesini oğlu Orhan Gazi’ye göstererek buraya defnedilmesini vasiyet ettiği rivayet edilmektedir.  Bu sebeple,  Bursa’nın fethinden sonra Orhan Gazi tarafından bugünki Tophane Parkı olarak bilinen yere defnedilmiştir. Halk arasında “Osmancık” veya “Manastır” türbesi olarak da bilinir. Selçuklu sultanı tarafından Osman Gazi’ye gönderilen ve 1801 yılındaki yangında yandığı düşünülen çok büyük bir davul ve tespihin bulunmasından dolayı bir zamanlar  “Davullu Manastır” adıyla da anılmıştır.  Zemininde Saint Elia Kilisesi’ne ait mozaikler yer almaktadır. 1855 depreminde yıkılan türbe, bugünkü haliyle Sultan Abdülaziz döneminde, 1863 yılında yaptırılmıştır. Kare planlı olan türbe, dört sütun üzeri kubbe ile örtülmüştür. Kubbenin içi kalem işleriyle kartuşlar şeklinde süslenmiş, pandantifler ve pencere alınlıkları iri barok motiflerle süslenmiştir. Orhan Gazi’nin yeşil çuha örtülü sandukası pirinç şebeke ile çevrilidir.. Türbe içerisinde, ortadaki pirinç parmaklıklarla çevrili sanduka Orhan Gazi’ye aittir. Türbede ayrıca, Orhan Gazi’nin eşi Nilüfer Hatun, Nilüfer Hatun’un oğlu Kasım (1347), Nilüfer Hatun’un kızı Fatma, Cem Sultan’ın oğlu Abdullah (1481), II. Bayezid’in oğlu Şehzade Korkud (1513) ve Yıldırım Bayezid’in oğlu Musa Çelebi (1413)’nin sandukaları vardır. Bunlardan başka isimleri bilinmeyen 14 kişiye ait sandukalar da bulunmaktadır.</p>
     </section>
 
-    <section id="koza_han" class="content">
+    <section id="koza_han" class="acıklama">
         <h2>Koza Han</h2>
         <p>Koza Han 15. yüzyıl sonlarında II. Bayezid tarafından mimar Abdül ula bin Pulat Şah'a İstanbul'daki eserlerine vakıf olarak Bursa'da yaptırılmış handır.
 
@@ -178,7 +89,7 @@ Hanlar Bölgesi'nde Ulu Cami ile Orhan Camii arasında bulunur. Osmanlı devri h
 Geçmişte Yeni Han, Han-ı Cedid, Han-ı Cedid-i Evvel (Pirinç Han’ın yapılmasından sonra), Han-ı Cedid-i Amire, Yeni Kervansaray, Beylik Han, Beylik Kervansaray, Simkeş Han, Sırmakeş Han gibi birçok adla anılmış olan yapı, içinde ipek kozası ticareti yapıldığı için Koza Han adıyla anılır olmuştur. Koza ticareti için Bursa'ya gelen ipek tüccarları konaklama hizmeti veren handa altlı üstlü iki oda tutmuşlar; üstteki odayı ticari işlerini görmek ve konaklamak, alttaki odayı da ticaret mallarını depolamada kullanmışlardır. Han, günümüzde ticarî işlevini korumaktadır.</p>
     </section>
 
-    <section id="ulu_camii" class="content">
+    <section id="ulu_camii" class="acıklama">
         <h2>Ulu Camii</h2>
         <p>Bursa'nın tarihi sembollerinden olan cami, Bursa kent merkezinde, Atatürk Caddesi üzerindedir. Çok ayaklı cami şemasının en klasik ve anıtsal örneği sayılır. Yirmi kubbeli yapı, Türkiye'deki iç cemaat yeri en geniş camidir. Mimarın Ali Neccar veya Hacı İvaz olduğu sanılmaktadır. Caminin kündekari tekniği ile yapılmış minberi Selçuklu oyma sanatından Osmanlı ahşap oymacılığı sanatına geçişin en önemli örneklerinden biri kabul edilen değerli bir sanat eseridir.
 
@@ -187,7 +98,7 @@ Caminin duvarlarında bulunan 19. yüzyılın ikinci yarısında ve 20. yüzyıl
 Caminin iç mekanında, tepesi açık bir kubbenin altında bulunan şadırvan, Ulu Cami'nin dikkat çekici özelliklerindendir.</p>
     </section>
 
-    <section id="cumalikizik" class="content">
+    <section id="cumalikizik" class="acıklama">
         <h2>Cumalıkızık</h2>
         <p>Cumalıkızık, Türkiye'nin Bursa ilinin Yıldırım ilçesine bağlı bir mahalledir. Bursa şehir merkezine 11 kilometredir. Ortalama 20 dakikada ulaşım sağlanır. Uludağ'ın kuzey eteklerinde kurulmuş ve hâlen yaşayan beş Kızık köyünden biridir. Diğer Kızık köyleri şunlardır: Değirmenlikızık, Fidyekızık, Hamanlıkızık ve Derekızık. Bayındırkızık, Dallıkızık, Kızık, Bodurkızık, Ortakızık, Camilikızık, Kiremitçikızık, Kızıkşıhlar ve Kızıkçeşme ise günümüze ulaşamamıştır. Cumalıkızık Etnografya Müzesi burada bulunmaktadır. 2000'de UNESCO tarafından Dünya Mirası Geçici Listesi'ne dahil edilen Cumalıkızık, 2014'te Bursa ile birlikte Dünya Mirası olarak tescil edildi</p>
     </section>
@@ -202,7 +113,7 @@ Caminin iç mekanında, tepesi açık bir kubbenin altında bulunan şadırvan, 
         let index = 0;
 
         function showContent(id) {
-            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            document.querySelectorAll('.acıklama').forEach(div => div.style.display = 'none');
             document.getElementById(id).style.display = 'block';
         }
 

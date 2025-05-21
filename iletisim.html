@@ -1,103 +1,39 @@
-<html,>
+<html>
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;  
-            margin: 0;
-        }
-        .container {
-            background-color: #d1e7fa;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        textarea {
-            height: 80px;
-        }
-        .error {
-            color: red;
-            font-size: 14px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        button {
-            width: 48%;
-            padding: 10px;
-            background-color: #0073e6;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        button:hover {
-            background-color: #005bb5;
-        }
-    </style>
+    <link rel="stylesheet" href="stil.css">
 </head>
-<body>
+<body class="bodyiletisim">
 
-<div id="app" class="container">
+<div id="app" class="containeriletisim">
     <h2>İletişim Formu</h2>
     <form @submit.prevent="validateForm">
-        <div class="form-group">
+        <div class="form-groupiletisim">
             <label>Ad Soyad:</label>
             <input type="text" v-model="name">
-            <span class="error" v-if="errors.name">{{ errors.name }}</span>
+            <span class="erroriletisim" v-if="errors.name">{{ errors.name }}</span>
         </div>
 
-        <div class="form-group">
+        <div class="form-groupiletisim">
             <label>E-posta:</label>
             <input type="email" v-model="email">
-            <span class="error" v-if="errors.email">{{ errors.email }}</span>
+            <span class="erroriletisim" v-if="errors.email">{{ errors.email }}</span>
         </div>
 
-        <div class="form-group">
+        <div class="form-groupiletisim">
             <label>Telefon:</label>
             <input type="text" v-model="phone">
-            <span class="error" v-if="errors.phone">{{ errors.phone }}</span>
+            <span class="erroriletisim" v-if="errors.phone">{{ errors.phone }}</span>
         </div>
 
-        <div class="form-group">
+        <div class="form-groupiletisim">
             <label>Mesaj:</label>
             <textarea v-model="message"></textarea>
-            <span class="error" v-if="errors.message">{{ errors.message }}</span>
+            <span class="erroriletisim" v-if="errors.message">{{ errors.message }}</span>
         </div>
 
-        <div class="button-container">
+        <div class="button-containeriletisim">
             <button type="button" @click="clearForm">Temizle</button>
             <button type="submit">Gönder</button>
         </div>

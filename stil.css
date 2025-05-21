@@ -1,0 +1,381 @@
+/*giris*/
+.bodygiris {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+}
+.giris-container {
+    background-color: #d1e7fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.giris-container h2 {
+     margin-bottom: 20px;
+    color: #333;
+}
+.formgiris {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.bodygiris label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bodygiris input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.bodygiris button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+transition: 0.3s;
+}
+
+.bodygiris button:hover {
+    background-color: #005bb5;
+}
+/*anasayfa*/
+.bodyanasayfa {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.bodyanasayfa table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 10px #0000001a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bodyanasayfa th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.başlık {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #0073e6;
+}
+
+.linkler {
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+}
+
+.linkler a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.linkler:hover {
+    background-color: #005bb5;
+}
+
+.bodyanasayfa footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+/*Hakkimda*/
+.bodyhakkimda {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+    background-color: #affcff;
+}
+.kutu {
+    max-width: 800px;
+    margin: auto;
+    background: #dff9ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 100px #0000001a;
+}
+.bodyhakkimda h1 {
+    text-align: center;
+    color: #333;
+}
+.bodyhakkimda img{
+    height: 150px;
+}
+/*CV*/
+.bodycv {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #58cdff;
+}
+.bodycv header, section, article, aside, footer {
+    background: #d8f3ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.bodycv h1, h2 {
+    color: #333;
+}
+/*Sehir*/
+.bodysehir { 
+    font-family: Arial, sans-serif; 
+    font-size: larger;
+    text-align: center; 
+    margin: 0; 
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.slider-kutu { 
+    width: 100%; 
+    max-width: 800px; 
+    margin: auto; 
+    position: relative; 
+    overflow: hidden; 
+}
+.slider { 
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+}
+.slide { 
+    min-width:100%;
+    box-sizing: border-box; 
+}
+.slider img { 
+    width: 100%; 
+    height: 500px; 
+    cursor: pointer; 
+}
+.buttonsehir { 
+    position: absolute;
+    top: 50%; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    transform: translateY(-50%); 
+}
+.buttonsehir button { 
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer;
+}
+.acıklama { 
+    display: none; 
+    padding: 20px; 
+    text-align: left; 
+    max-width: 800px; 
+    margin: auto; 
+}
+.bodysehir header {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.bodysehir section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+.bodysehir footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.resimsehir{
+    width: 400px;
+    height: 300px;
+}
+/*takim*/
+.bodytakim { 
+    font-family: Arial, sans-serif;
+    font-size: larger; 
+    text-align: center; 
+    background-color: #caffc4; 
+}
+.bodytakim h1 { 
+    color: green;
+}
+.containertakim {
+    width: 80%; 
+    margin: auto; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 10px; 
+}
+.bodytakim img { 
+    max-width: 100%; 
+    height: auto; 
+}
+.bodytakim a { 
+    text-decoration: none; 
+    color: white; 
+    background: green; 
+    padding: 10px; 
+    border-radius: 5px; }
+.resimtakim{
+    height: 200px;
+    width: 800px;
+}
+.logo{
+    margin: 10px; 
+    width: 200px; 
+    height: auto; 
+}
+.bodytakim pre{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: larger;
+}
+/*ilgialanlarim*/
+.bodyilgialani { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+}
+.bodyilgialani table { 
+    width: 80%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+}
+.bodyilgialani th, td { 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+}
+.bodyilgialani th { 
+    background-color: #f8b400; 
+    color: white; 
+}
+.bodyilgialani tr:nth-child(even) { 
+    background-color: #f2f2f2; 
+}
+/*iletisim*/
+.bodyiletisim {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+}
+.containeriletisim {
+    background-color: #d1e7fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+.bodyiletisim h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-groupiletisim {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.bodyiletisim label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.bodyiletisim input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.bodyiletisim textarea {
+    height: 80px;
+}
+.erroriletisim {
+    color: red;
+    font-size: 14px;
+}
+.button-containeriletisim {
+    display: flex;
+    justify-content: space-between;
+     margin-top: 20px;
+}
+.bodyiletisim button {
+    width: 48%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bodyiletisim button:hover {
+    background-color: #005bb5;
+}
+/*iletisimsonuc*/
+.bodyiletisimsonuc {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+}
+.containeriletisimsonuc {
+    background-color: #d1e7fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+.bodyiletisimsonuc h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.formiletisimsonuc {
+    text-align: left;
+    font-size: 18px;
+}
