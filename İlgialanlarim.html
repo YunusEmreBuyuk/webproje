@@ -1,52 +1,50 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="stil.css">
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="stil.css">
 </head>
-<body class="bodyilgialani">
+<body class="bodyilgialanlarım">
+  <h1>Süper Lig Puan Durumu (2021-2022)</h1>
+  <table id="puanDurumu">
+    <thead>
+      <tr>
+        <th>Sıra</th>
+        <th>Takım</th>
+        <th>O</th>
+        <th>G</th>
+        <th>B</th>
+        <th>M</th>
+        <th>Averaj</th>
+        <th>Puan</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
 
-    <h1>2021-2022 Süper Lig Puan Durumu</h1>
-    <table id="puanTablosu">
-        <thead>
-            <tr>
-                <th>📌 Sıra</th>
-                <th>⚽ Takım</th>
-                <th>🎯 Puan</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-
-    <script>
-        fetch("https://v3.football.api-sports.io/standings?league=203&season=2021", {
-            method: "GET",
-            headers: {
-                "x-rapidapi-host": "v3.football.api-sports.io",
-                "x-rapidapi-key": "db564af76beb115b49a0e205a61da533" 
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("API Yanıtı:", data);
-
-            const tablo = document.querySelector("#puanTablosu tbody");
-            tablo.innerHTML = "";
-
-          if (data.response && data.response.length > 0) { 
-                const standings = data.response[0].league.standings[0];
-                standings.forEach(team => {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `<td>${team.rank}</td><td>${team.team.name}</td><td>${team.points}</td>`;
-                    tablo.appendChild(row);
-                });
-            } else {tablo.innerHTML = "<tr><td colspan='3'>Veri bulunamadı.</td></tr>";}
-        })
-        .catch(error => {
-            console.error("Bağlantı hatası:", error);
-            document.querySelector("#puanTablosu tbody").innerHTML =
-                "<tr><td colspan='3'>Veri yüklenirken hata oluştu.</td></tr>";
+  <script>
+    fetch('https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4339&s=2021-2022')
+      .then(response => response.json())
+      .then(data => {
+        const puanDurumu = document.getElementById('puanDurumu').getElementsByTagName('tbody')[0];
+        data.table.forEach(team => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${team.intRank}</td>
+            <td>${team.strTeam}</td>
+            <td>${team.intPlayed}</td>
+            <td>${team.intWin}</td>
+            <td>${team.intDraw}</td>
+            <td>${team.intLoss}</td>
+            <td>${team.intGoalDifference}</td>
+            <td>${team.intPoints}</td>
+          `;
+          puanDurumu.appendChild(row);
         });
-    </script>
-
+      })
+      .catch(error => {
+        console.error('Veri alınamadı:', error);
+      });
+  </script>
 </body>
 </html>

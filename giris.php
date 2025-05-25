@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     if (!str_ends_with($username, "@sakarya.edu.tr")) {
         echo "Sadece @sakarya.edu.tr uzantılı e-posta adresleri kabul edilmektedir!";
-        header("Refresh: 1; url=proje.html");
+        header("Refresh: 1; url=index.html");
         exit;
     }
     $student_number = explode("@", $username)[0];
@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Refresh: 1; url=anasayfa.html");
     } else {
         echo "Giriş başarısız! Tekrar deneyiniz.";
-        header("Refresh: 1; url=proje.html");
+        header("Refresh: 1; url=index.html");
         exit;
     }
 }
